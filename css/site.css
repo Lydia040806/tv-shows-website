@@ -116,3 +116,70 @@ ol {
     font-size: 15px;
     line-height: 1.6;
 }
+
+.home-page header {
+    width: min(850px, 100%);
+}
+
+.home-page nav {
+    flex-wrap: wrap;
+}
+
+.show-summaries {
+    width: min(850px, 100%);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.show-summary {
+    display: grid;
+    grid-template-columns: 200px minmax(0, 1fr);
+    grid-template-areas:
+        "title title"
+        "image description";
+    column-gap: 24px;
+    align-items: start;
+    margin-bottom: 28px;
+}
+
+.show-summary h2 {
+    grid-area: title;
+    width: auto;
+    margin: 20px 0 10px;
+    padding: 0;
+}
+
+.show-summary-image {
+    grid-area: image;
+    float: none;
+    width: 200px;
+    height: auto;
+    margin: 0;
+}
+
+.show-summary-description {
+    grid-area: description;
+    width: auto;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 600px) {
+    .show-summary {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-areas:
+            "title"
+            "image"
+            "description";
+        row-gap: 12px;
+    }
+
+    .show-summary h2 {
+        margin-top: 16px;
+    }
+
+    .show-summary-image {
+        width: min(220px, 100%);
+    }
+}
