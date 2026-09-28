@@ -4,7 +4,7 @@ A small static website featuring information about four television sitcoms: *Com
 
 ## Pages
 
-- `home.html` - overview of all four shows
+- `index.html` - overview of all four shows
 - `community.html` - information about *Community*
 - `malcolminthemiddle.html` - information about *Malcolm in the Middle*
 - `parksandrec.html` - information about *Parks and Recreation*
@@ -12,6 +12,6 @@ A small static website featuring information about four television sitcoms: *Com
 
 ## Run locally
 
-Open `home.html` in a web browser. No installation or build step is required.
+Open `index.html` in a web browser. No installation or build step is required.
 
 Styles are in `css/site.css`, and page images are in `images/`.
