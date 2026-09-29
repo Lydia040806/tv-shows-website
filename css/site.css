@@ -237,3 +237,340 @@ ol {
             overflow-wrap: anywhere;
         }
     }
+
+.malcolm-page {
+    color: #e8e0cc;
+    background-color: #181816;
+    background-image:
+        radial-gradient(rgba(232, 224, 204, 0.1) 0.8px, transparent 0.9px),
+        linear-gradient(115deg, transparent 0 48%, rgba(255, 255, 255, 0.025) 48.2% 48.5%, transparent 48.7%);
+    background-size: 7px 7px, 100% 100%;
+}
+
+.malcolm-page header {
+    width: 100%;
+    margin: 0;
+    padding: 18px max(22px, calc((100% - 1120px) / 2));
+    border-bottom: 4px solid #d7f000;
+    background: #10100f;
+}
+
+.malcolm-page header h1 {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 16px;
+    color: #f1ead8;
+    font-family: "Bebas Neue", Impact, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.malcolm-page header h1 span {
+    color: #d7f000;
+    font-family: "Special Elite", monospace;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.malcolm-page nav {
+    gap: 10px 24px;
+}
+
+.malcolm-page nav a {
+    color: #e8e0cc;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.malcolm-page nav a:hover {
+    color: #d7f000;
+}
+
+.malcolm-main {
+    width: min(1120px, 100%);
+    margin: 0 auto;
+    padding: 64px 32px 88px;
+}
+
+.malcolm-intro {
+    display: grid;
+    grid-template-columns: minmax(230px, 0.78fr) minmax(0, 1.22fr);
+    align-items: center;
+    gap: 64px;
+}
+
+.malcolm-poster {
+    position: relative;
+    width: min(100%, 340px);
+    margin: 0 auto;
+    padding: 12px 12px 16px;
+    transform: rotate(-2deg);
+    background: #e8e0cc;
+    box-shadow: 10px 10px 0 #bf3528, 18px 18px 0 rgba(0, 0, 0, 0.45);
+}
+
+.malcolm-poster::before {
+    position: absolute;
+    top: -13px;
+    left: 35%;
+    width: 92px;
+    height: 24px;
+    transform: rotate(3deg);
+    background: rgba(215, 240, 0, 0.82);
+    content: "";
+}
+
+.malcolm-page .malcolm-poster img {
+    display: block;
+    float: none;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    filter: saturate(0.78) contrast(1.08);
+}
+
+.malcolm-poster figcaption {
+    padding-top: 12px;
+    color: #27251f;
+    font-family: "Special Elite", monospace;
+    font-size: 12px;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.malcolm-intro-copy {
+    min-width: 0;
+}
+
+.malcolm-kicker,
+.malcolm-section-tag {
+    width: auto;
+    min-height: 0;
+    margin: 0 0 12px;
+    padding: 0;
+    color: #d7f000;
+    font-family: "Special Elite", monospace;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.malcolm-page .malcolm-title {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    color: #f1ead8;
+    font-family: "Rubik Glitch", "Bebas Neue", Impact, sans-serif;
+    font-size: 88px;
+    line-height: 0.82;
+    text-transform: uppercase;
+}
+
+.malcolm-page .malcolm-description {
+    width: auto;
+    min-height: 0;
+    margin: 24px 0;
+    padding: 0 0 0 18px;
+    border-left: 3px solid #bf3528;
+    color: #d1c8b5;
+    font-size: 17px;
+    line-height: 1.65;
+}
+
+.malcolm-stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: auto;
+    margin: 0;
+    padding: 14px 0 0;
+    border-top: 1px solid #605d51;
+    list-style: none;
+}
+
+.malcolm-stats li {
+    display: grid;
+    gap: 2px;
+}
+
+.malcolm-stats strong {
+    color: #bf3528;
+    font-family: "Bebas Neue", Impact, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.malcolm-stats span {
+    color: #c9c1af;
+    font-family: "Special Elite", monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.malcolm-archive {
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    gap: 56px;
+    margin-top: 88px;
+    padding-top: 24px;
+    border-top: 1px solid #605d51;
+}
+
+.malcolm-list-block {
+    min-width: 0;
+}
+
+.malcolm-page .malcolm-section-tag {
+    margin-bottom: 8px;
+    color: #bf6c39;
+    font-size: 12px;
+}
+
+.malcolm-page .malcolm-list-block h3 {
+    width: auto;
+    margin: 0 0 18px;
+    padding: 0;
+    clear: none;
+    color: #f1ead8;
+    font-family: "Bebas Neue", Impact, sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.malcolm-cast-list,
+.malcolm-facts-list {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.malcolm-cast-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 24px;
+    counter-reset: cast;
+}
+
+.malcolm-cast-list li {
+    padding: 10px 0;
+    border-top: 1px solid #47453c;
+    color: #eee7d6;
+    font-size: 15px;
+}
+
+.malcolm-cast-list li::before {
+    margin-right: 10px;
+    color: #d7f000;
+    content: "0" counter(cast);
+    counter-increment: cast;
+    font-family: "Special Elite", monospace;
+    font-size: 12px;
+}
+
+.malcolm-facts-list {
+    counter-reset: facts;
+}
+
+.malcolm-facts-list li {
+    display: grid;
+    grid-template-columns: 34px minmax(0, 1fr);
+    gap: 12px;
+    padding: 12px 0;
+    border-top: 1px solid #47453c;
+    color: #d1c8b5;
+    font-size: 14px;
+    line-height: 1.55;
+}
+
+.malcolm-facts-list li::before {
+    color: #bf3528;
+    content: "0" counter(facts);
+    counter-increment: facts;
+    font-family: "Bebas Neue", Impact, sans-serif;
+    font-size: 20px;
+}
+
+@media (max-width: 850px) {
+    .malcolm-page header {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+    .malcolm-main {
+        padding-top: 48px;
+    }
+
+    .malcolm-intro {
+        grid-template-columns: minmax(190px, 0.7fr) minmax(0, 1.3fr);
+        gap: 36px;
+    }
+
+    .malcolm-page .malcolm-title {
+        font-size: 68px;
+    }
+
+    .malcolm-archive {
+        gap: 32px;
+        margin-top: 64px;
+    }
+}
+
+@media (max-width: 600px) {
+    .malcolm-page header {
+        padding: 16px 20px;
+    }
+
+    .malcolm-page header h1 {
+        display: block;
+        font-size: 26px;
+    }
+
+    .malcolm-page header h1 span {
+        display: block;
+        margin-top: 4px;
+    }
+
+    .malcolm-page nav {
+        gap: 10px 16px;
+    }
+
+    .malcolm-main {
+        padding: 36px 22px 56px;
+    }
+
+    .malcolm-intro,
+    .malcolm-archive {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 36px;
+    }
+
+    .malcolm-poster {
+        width: min(270px, 84%);
+    }
+
+    .malcolm-page .malcolm-title {
+        font-size: 58px;
+    }
+
+    .malcolm-page .malcolm-description {
+        font-size: 16px;
+    }
+
+    .malcolm-archive {
+        margin-top: 56px;
+    }
+
+    .malcolm-page .malcolm-list-block h3 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 360px) {
+    .malcolm-page .malcolm-title {
+        font-size: 50px;
+    }
+}
