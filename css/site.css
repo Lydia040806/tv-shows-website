@@ -199,19 +199,6 @@ ol {
     font-weight: 400;
 }
 
-.home-page nav {
-    gap: 8px 24px;
-}
-
-.home-page nav a {
-    color: #405663;
-    font-size: 12px;
-}
-
-.home-page nav a:hover {
-    color: var(--guide-blue);
-}
-
 .show-summaries {
     width: min(900px, 100%);
     margin: 0 auto;
@@ -242,6 +229,83 @@ ol {
 .home-guide-heading span {
     color: #657783;
     font-size: 12px;
+}
+
+.home-page .home-channel-links {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+    margin-bottom: 28px;
+}
+
+.home-page .home-channel-link {
+    display: grid;
+    align-content: start;
+    gap: 8px;
+    min-width: 0;
+    min-height: 112px;
+    padding: 12px;
+    border: 1px solid #c3cdd1;
+    border-top: 3px solid var(--guide-blue);
+    background: rgba(255, 255, 255, 0.75);
+    color: var(--guide-ink);
+    text-decoration: none;
+    transition: background-color 140ms ease, transform 140ms ease;
+}
+
+.home-page .home-channel-link:hover {
+    transform: translateY(-2px);
+    background: #fff;
+}
+
+.home-channel-link > span:first-child {
+    color: #687a84;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 9px;
+}
+
+.home-channel-link strong {
+    font-family: "Lora", Georgia, serif;
+    font-size: 15px;
+    line-height: 1.25;
+}
+
+.home-channel-link > span:last-child {
+    align-self: end;
+    margin-top: auto;
+    color: var(--guide-blue);
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.home-channel-link-community {
+    border-top-color: #426a9e !important;
+}
+
+.home-channel-link-malcolm {
+    border-top-color: #bf3528 !important;
+}
+
+.home-channel-link-malcolm strong {
+    color: #6b452e;
+    font-family: "Bebas Neue", Impact, sans-serif;
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
+.home-channel-link-parks {
+    border-top-color: #2d674e !important;
+}
+
+.home-channel-link-office {
+    border-top-color: #426783 !important;
+}
+
+@media (max-width: 760px) {
+    .home-page .home-channel-links {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
 .show-summary {
