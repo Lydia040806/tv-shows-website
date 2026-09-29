@@ -38,6 +38,7 @@ h1 {
 /* Navigation */
 nav {
     display: flex;
+    flex-wrap: wrap;
     gap: 25px;
 }
 
@@ -183,3 +184,50 @@ ol {
         width: min(220px, 100%);
     }
 }
+
+    @media (max-width: 850px) {
+        header,
+        h2,
+        h3,
+        p,
+        ol {
+            width: min(850px, 100%);
+        }
+
+        body:not(.home-page) img {
+            display: block;
+            float: none;
+            width: min(300px, 100%);
+            margin: 0 auto 16px;
+        }
+
+        body:not(.home-page) h3:first-of-type,
+        body:not(.home-page) h3:not(:first-of-type) {
+            width: min(850px, 100%);
+        }
+
+        body:not(.home-page) h3:first-of-type {
+            margin: 16px auto 10px;
+            padding: 0 20px;
+        }
+
+        body:not(.home-page) p {
+            min-height: 0;
+            padding: 0 20px;
+        }
+
+        body:not(.home-page) h3:not(:first-of-type) {
+            padding: 0 20px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        nav {
+            column-gap: 16px;
+            row-gap: 10px;
+        }
+
+        h1 {
+            overflow-wrap: anywhere;
+        }
+    }
