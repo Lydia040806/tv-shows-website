@@ -3,54 +3,88 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>The Office Page</title>
+        <title>The Office | Scranton Branch Report</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/site.css?v=377e48d">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/site.css?v=office-descent">
     </head>
 
     <body class="office-page">
-        <header>
-            <h1>Super Cool Title</h1>
-
+        <header class="office-header">
+            <div class="office-header-inner">
+                <h1>Dunder Mifflin <span>Paper Company / Scranton Branch</span></h1>
             <nav>
                 <a href="index.html">Home</a>
                 <a href="community.html"> Community </a>
                 <a href="malcolminthemiddle.html"> Malcolm in the Middle </a>
                 <a href="parksandrec.html"> Parks and Recreation </a>
             </nav>
+            </div>
         </header>
-        <h2>The Office</h2>
-        <img src="images/theoffice.jpg" alt="The Office">
-        <p>
-            The Office is an American mockumentary sitcom television series.
-            It is based on the BBC series The Office created by Ricky Gervai
-            and Stephen Merchant, and adapted for NBC by Greg Daniels. The
-            show depicts the everyday work lives of office employees at the
-            Scranton, Pennsylvania branch of the fictional Dunder Mifflin Paper
-            Company. It aired from March 24, 2005, to May 16, 2013, for a total
-            of nine seasons consisting of 201 episodes.
-        </p>
-        <h3> Main Characters</h3>
-        <ol>
-            <li>Michael Scott</li>
-            <li>Dwight Schrute</li>
-            <li>Jim Halpert</li>
-            <li>Pam Beesly</li>
-            <li>Ryan Howard</li>
-            <li>Andy Bernard</li>
-            <li>Stanley Hudson</li>
-            <li>Angela Martin</li>
-        </ol>
-        <h3> Fun Facts</h3>
-        <ol>
-            <li>The Office was originally a British series created by Ricky Gervais and Stephen Merchant.</li>
-            <li>Bob Odenkirk was the original choice to play Michael Scott, but Steve Carell took the role after another show of his was canceled. Rainn Wilson also auditioned for Michael before landing the role of Dwight.</li>
-            <li>John Krasinski shot the opening credit footage of Scranton, Pennsylvania, while driving around researching the area.</li>
-            <li> The gas station rest stop where Jim proposes to Pam was entirely built as a replica set, costing roughly $250,000.</li>
-            <li>The show's theme song was composed by Jay Ferguson and performed by The Scrantones.</li>
-            <li>The most skipped episode was "Scott's Tots".</li>
-        </ol>
+
+        <main class="office-main">
+            <section class="office-executive" aria-labelledby="office-title">
+                <div class="office-executive-copy">
+                    <p class="office-eyebrow">Branch overview / prepared for corporate</p>
+                    <h2 id="office-title">The Office</h2>
+                    <p class="office-summary">
+                        A documentary record of ordinary workdays at Dunder Mifflin's
+                        Scranton branch. The NBC adaptation of Ricky Gervais and Stephen
+                        Merchant's British series was developed by Greg Daniels and ran
+                        from 2005 to 2013: nine seasons, 201 episodes, and a remarkable
+                        number of meetings that could have been emails.
+                    </p>
+                    <dl class="office-metrics">
+                        <div><dt>Branch</dt><dd>Scranton, PA</dd></div>
+                        <div><dt>Operating period</dt><dd>2005-2013</dd></div>
+                        <div><dt>Episodes filed</dt><dd>201</dd></div>
+                    </dl>
+                </div>
+                <figure class="office-photo">
+                    <img src="images/theoffice.jpg" alt="The Office cast at the Scranton branch">
+                    <figcaption>Approved for internal circulation</figcaption>
+                </figure>
+            </section>
+
+            <section class="office-roster" aria-labelledby="office-roster-title">
+                <div class="office-section-heading">
+                    <div>
+                        <p class="office-eyebrow">Personnel / current seating plan</p>
+                        <h3 id="office-roster-title">Branch directory</h3>
+                    </div>
+                    <span class="office-status">All departments reporting</span>
+                </div>
+                <ul class="office-roster-list">
+                    <li><span>01</span>Michael Scott</li>
+                    <li><span>02</span>Dwight Schrute</li>
+                    <li><span>03</span>Jim Halpert</li>
+                    <li><span>04</span>Pam Beesly</li>
+                    <li><span>05</span>Ryan Howard</li>
+                    <li><span>06</span>Andy Bernard</li>
+                    <li><span>07</span>Stanley Hudson</li>
+                    <li><span>08</span>Angela Martin</li>
+                </ul>
+            </section>
+
+            <section class="office-chaos" aria-labelledby="office-chaos-title">
+                <div class="office-section-heading">
+                    <div>
+                        <p class="office-eyebrow">Appendix / documentation became difficult</p>
+                        <h3 id="office-chaos-title">Unscheduled events</h3>
+                    </div>
+                    <span class="office-warning">Needs follow-up</span>
+                </div>
+                <ol class="office-incident-list">
+                    <li><span class="incident-tag">Incident 01 / Origin story</span><p>The Office began as a British series created by Ricky Gervais and Stephen Merchant.</p></li>
+                    <li><span class="incident-tag">Staffing note / Michael's role</span><p>Bob Odenkirk was once considered for Michael Scott. Rainn Wilson also auditioned for Michael before being cast as Dwight.</p></li>
+                    <li><span class="incident-tag">Travel expense / unapproved</span><p>John Krasinski filmed the Scranton footage used in the opening credits while researching the area.</p></li>
+                    <li><span class="incident-tag">Facilities / proposal set</span><p>The gas-station rest stop where Jim proposes to Pam was built as a replica set for roughly $250,000.</p></li>
+                    <li><span class="incident-tag">Audio / cleared for use</span><p>Jay Ferguson composed the theme song, performed by The Scrantones.</p></li>
+                    <li><span class="incident-tag">Viewer retention / see attached</span><p>“Scott's Tots” is frequently cited as the show's most skipped episode. Please do not schedule it for morale day.</p></li>
+                </ol>
+                <p class="office-footer-note">End of report. Please return all forms to the break room. No, the other break room.</p>
+            </section>
+        </main>
     </body>
 </html>

@@ -3,51 +3,103 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Parks and Recreation Page</title>
+        <title>Parks and Recreation | Pawnee Field Guide</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/site.css?v=377e48d">
+        <link rel="stylesheet" href="css/site.css?v=parks-ecology">
     </head>
 
-    <body>
-        <header>
-            <h1>Super Cool Title</h1>
-
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="community.html"> Community </a>
-                <a href="malcolminthemiddle.html"> Malcolm in the Middle </a>
-                <a href="theoffice.html"> The Office </a>
-            </nav>
+    <body class="parks-page">
+        <header class="parks-header">
+            <div class="parks-header-inner">
+                <h1>Pawnee Parks Department <span>Public lands / shared future</span></h1>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="community.html">Community</a>
+                    <a href="malcolminthemiddle.html">Malcolm in the Middle</a>
+                    <a href="theoffice.html">The Office</a>
+                </nav>
+            </div>
         </header>
 
-        <h2>Parks and Recreation</h2>
-        <img src="images/parksandrec.jpg" alt="Parks and Recreation">
-        <p>
-            Parks and Recreation (also known as Parks and Rec) is an American
-            political satire mockumentary television sitcom created by Greg
-            Daniels and Michael Schur. The series aired on NBC from April 9,
-            2009, to February 24, 2015, for 125 episodes, over seven seasons.
-            A special reunion episode aired on April 30, 2020.
-        </p>
-        <h3> Main Characters</h3>
-        <ol>
-            <li>Leslie Knope</li>
-            <li>Ann Perkins</li>
-            <li>Tom Haverford</li>
-            <li>Chris Traeger</li>
-            <li>April Ludgate</li>
-            <li>Andy Dwyer</li>
-            <li>Ron Swanson</li>
-            <li>Ben Wyatt</li>
-        </ol>
-        <h3> Fun Facts</h3>
-        <ol>
-            <li>Chris Pratt's character was only meant to appear in the first season as a short guest arc, but producers loved him so much they made Andy Dwyer a permanent main character</li>
-            <li>Real-life marriage connects Megan Mullally (Tammy Two) and Nick Offerman (Ron Swanson), who are married in real life.</li>
-            <li>The show's original title was "Public Service"</li>
-            <li>Three alternate endings were filmed for the season four finale.</li>
-        </ol>
+        <main class="parks-main">
+            <section class="parks-hero" aria-labelledby="parks-title">
+                <figure class="parks-hero-photo">
+                    <img src="images/parksandrec.jpg" alt="Parks and Recreation cast">
+                    <figcaption>Pawnee, Indiana / Field office</figcaption>
+                </figure>
+                <div class="parks-hero-copy">
+                    <p class="parks-eyebrow">Municipal field guide / Issue 07</p>
+                    <h2 id="parks-title">Parks and Recreation</h2>
+                    <p class="parks-lead">
+                        In Pawnee, public parks are for everyone: neighbors, wildlife,
+                        future generations, and the occasional very enthusiastic town
+                        meeting. This field guide celebrates the people who look after
+                        shared green space and the small choices that help it thrive.
+                    </p>
+                    <p class="parks-series-note">
+                        The NBC comedy, created by Greg Daniels and Michael Schur, ran
+                        from 2009 to 2015 for seven seasons and 125 episodes. A reunion
+                        special followed in 2020.
+                    </p>
+                    <div class="parks-values" aria-label="Department values">
+                        <span>Care for place</span>
+                        <span>Share resources</span>
+                        <span>Leave it thriving</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="parks-stewardship" aria-labelledby="parks-stewardship-title">
+                <div class="parks-section-heading">
+                    <div>
+                        <p class="parks-eyebrow">Field notes / Leave the park better</p>
+                        <h3 id="parks-stewardship-title">A greener day in Pawnee</h3>
+                    </div>
+                    <span class="parks-field-stamp">Action list / 04</span>
+                </div>
+                <ol class="parks-action-list">
+                    <li><span>01</span><div><strong>Grow for this place</strong><p>Choose native plants suited to your area to give local pollinators food and shelter.</p></div></li>
+                    <li><span>02</span><div><strong>Leave no trace</strong><p>Pack out litter, stay on marked paths, and leave plants and wildlife where they are.</p></div></li>
+                    <li><span>03</span><div><strong>Use things again</strong><p>Bring a refillable bottle, borrow tools, and reuse supplies before buying new ones.</p></div></li>
+                    <li><span>04</span><div><strong>Make room for everyone</strong><p>Keep shared spaces welcoming, accessible, and cared for by the whole community.</p></div></li>
+                </ol>
+            </section>
+
+            <section class="parks-roster" aria-labelledby="parks-roster-title">
+                <div class="parks-section-heading">
+                    <div>
+                        <p class="parks-eyebrow">Staff directory / many binders</p>
+                        <h3 id="parks-roster-title">The department</h3>
+                    </div>
+                </div>
+                <ul class="parks-cast-list">
+                    <li>Leslie Knope</li>
+                    <li>Ann Perkins</li>
+                    <li>Tom Haverford</li>
+                    <li>Chris Traeger</li>
+                    <li>April Ludgate</li>
+                    <li>Andy Dwyer</li>
+                    <li>Ron Swanson</li>
+                    <li>Ben Wyatt</li>
+                </ul>
+            </section>
+
+            <section class="parks-notes" aria-labelledby="parks-notes-title">
+                <div class="parks-section-heading">
+                    <div>
+                        <p class="parks-eyebrow">Behind the scenes / filed for posterity</p>
+                        <h3 id="parks-notes-title">Department notes</h3>
+                    </div>
+                </div>
+                <ul class="parks-facts-list">
+                    <li>Chris Pratt was initially intended as a short first-season guest; Andy became a regular character.</li>
+                    <li>Megan Mullally and Nick Offerman, who play Tammy Two and Ron Swanson, are married in real life.</li>
+                    <li>The show's original title was “Public Service.”</li>
+                    <li>Three alternate endings were filmed for the season four finale.</li>
+                </ul>
+            </section>
+        </main>
     </body>
 </html>
