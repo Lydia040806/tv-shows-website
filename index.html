@@ -3,27 +3,37 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Home Page</title>
+        <title>Tonight on TV | Show Guide</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/site.css?v=index-themes">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/site.css?v=tv-guide">
     </head>
 
     <body class="home-page">
-        <header>
-            <h1>Super cool Title</h1>
-
+        <header class="home-header">
+            <div class="home-header-inner">
+                <div class="home-broadcast-strip">
+                    <span class="home-on-air">CHANNEL 04</span>
+                    <span>TRANSMISSION LOG / 2000-2020</span>
+                </div>
+                <h1>Tonight on TV <span>Four shows. Four realities.</span></h1>
             <nav>
                 <a href="community.html"> Community </a>
                 <a href="malcolminthemiddle.html"> Malcolm in the Middle </a>
                 <a href="parksandrec.html"> Parks and Recreation </a>
                 <a href="theoffice.html"> The Office </a>
             </nav>
+            </div>
         </header>
 
         <main class="show-summaries">
+        <div class="home-guide-heading">
+            <p>Now showing / The channel guide</p>
+            <span>Choose your universe</span>
+        </div>
         <section class="show-summary summary-community">
+        <div class="show-summary-meta"><span>CH 01</span><span>2009-2015 / 6 SEASONS</span></div>
         <h2>Community</h2>
         <img class="show-summary-image" src="images/community.jpg" alt="Community">
         <p class="show-summary-description">
@@ -36,6 +46,7 @@
         </section>
 
         <section class="show-summary summary-malcolm">
+        <div class="show-summary-meta"><span>CH 02</span><span>2000-2006 / 7 SEASONS</span></div>
         <h2>Malcolm of the Middle</h2>
         <img class="show-summary-image" src="images/malcolminthemiddle.jpg" alt="Malcolm in the Middle">
         <p class="show-summary-description">
@@ -47,6 +58,7 @@
         </section>
 
         <section class="show-summary summary-parks">
+        <div class="show-summary-meta"><span>CH 03</span><span>2009-2015 / 7 SEASONS</span></div>
         <h2>Parks and Recreation</h2>
         <img class="show-summary-image" src="images/parksandrec.jpg" alt="Parks and Recreation">
         <p class="show-summary-description">
@@ -59,6 +71,7 @@
         </section>
 
         <section class="show-summary summary-office">
+        <div class="show-summary-meta"><span>CH 04</span><span>2005-2013 / 9 SEASONS</span></div>
         <h2>The Office</h2>
         <img class="show-summary-image" src="images/theoffice.jpg" alt="The Office">
         <p class="show-summary-description">
