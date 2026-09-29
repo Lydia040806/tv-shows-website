@@ -1639,6 +1639,51 @@ ol {
     text-transform: uppercase;
 }
 
+.office-theme {
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    align-items: center;
+    gap: 24px;
+    margin-top: 36px;
+    padding: 18px 20px;
+    border: 1px solid var(--office-rule);
+    border-left: 4px solid var(--office-blue);
+    background: #fff;
+}
+
+.office-theme-copy {
+    min-width: 0;
+}
+
+.office-page .office-theme h3 {
+    width: auto;
+    margin: 0 0 6px;
+    padding: 0;
+    clear: none;
+    color: var(--office-ink);
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.office-page .office-theme-copy p:last-child {
+    width: auto;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    color: #64727d;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.office-theme iframe {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    border: 0;
+    background: #fff;
+}
+
 .office-roster {
     margin-top: 40px;
 }
@@ -1841,6 +1886,11 @@ ol {
     .office-photo {
         width: min(380px, 100%);
         margin: 0 auto;
+    }
+
+    .office-theme {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 14px;
     }
 
     .office-incident-list {
